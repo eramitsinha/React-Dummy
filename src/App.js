@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Props1 from './Props1';
+import Props2 from './Props2';
+
 
 function App() {
+
+  // create new component inside App Component
+  function Apple()
+  {
+    return(
+      <h2>Apple</h2>
+    );
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Apple />
+     
+      <Props1 name="john" />
+      <Props2 name="Mike" others={{city:'USA', phone:'1234'}} />
     </div>
   );
 }
