@@ -2,10 +2,21 @@ import React, { useState } from 'react'
 
 export default function BasicFormValidation() {
     const [userErr, setUserErr] = useState(false)
-    const [mobErr, setMobErr] = useState(false);
+    const [mobErr, setMobErr] = useState(false)
+
+    const[user,setUser] = useState("")
+    const [mobile,setPass] = useState("")
     
     function abc(e)
     {
+        if(user.length<3 || mobile.length<3)
+        {
+            alert("Validation Failed");
+        }
+        else
+        {
+            alert("Ok");
+        }
         e.preventDefault();
     }
 
@@ -20,6 +31,7 @@ export default function BasicFormValidation() {
         {
             setUserErr(false)
         }
+        setUser(k)
     }
 
     function getMobile(e)
@@ -33,6 +45,7 @@ export default function BasicFormValidation() {
         {
             setMobErr(false)
         }
+        setPass(k)
     }
 
     return (
