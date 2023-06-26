@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Props1 from './Props1';
 import Props2 from './Props2';
+import PropsClass from './PropsClass';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
      
       <Props1 name="john" />
       <Props2 name="Mike" others={{city:'USA', phone:'1234'}} />
+
+      <PropsClass name="Ramesh" email="ramesh@yahoo.com" />
     </div>
   );
 }
