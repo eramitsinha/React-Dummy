@@ -19,6 +19,12 @@ import Toggle from './Toggle';
 import Condition from './Condition';
 import Form from './Form';
 import BasicFormValidation from './BasicFormValidation';
+import UseEffect from './UseEffect';
+import LifeCycleMethods from './LifeCycleMethods';
+import GetDerivedStateFromProp from './GetDerivedStateFromProp';
+import ShouldCompUpdate from './ShouldCompUpdate';
+import ComponentDidUpdat from './ComponentDidUpdat';
+import ComponentWillUnmount1 from './ComponentWillUnmount1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -41,6 +47,13 @@ root.render(
     <Condition />
     <Form />
     <BasicFormValidation />
+    <UseEffect />
+    <LifeCycleMethods />
+    <GetDerivedStateFromProp />
+    <ShouldCompUpdate />
+    <ComponentDidUpdat />
+    <ComponentWillUnmount1 />
+
   </React.StrictMode>
 );
 
