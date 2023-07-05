@@ -40,6 +40,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Bootstrap from './Bootstrap';
 import DemoTest from './DemoTest';
+import ContextAPI1 from './ContextAPI1';
+import PureComponent1 from './PureComponent1';
+import PureComponent2 from './PureComponent2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -76,7 +79,9 @@ root.render(
     <Fragment2 />
     <Bootstrap />
     <DemoTest />
-   
+    <ContextAPI1 />
+    <PureComponent1 />
+    <PureComponent2 />
 
    </React.StrictMode>
 
