@@ -25,12 +25,26 @@ import GetDerivedStateFromProp from './GetDerivedStateFromProp';
 import ShouldCompUpdate from './ShouldCompUpdate';
 import ComponentDidUpdat from './ComponentDidUpdat';
 import ComponentWillUnmount1 from './ComponentWillUnmount1';
+import UseEffectHook1 from './UseEffectHook1';
+import UseEffectHook2 from './useEffectHook2';
+import Demo2 from './Demo2';
+import UseStateObjects from './UseStateObjects';
+import Event from './StateFunctionalComp1';
+import StateFunctionalComp1 from './StateFunctionalComp1';
+import Fragment from './Fragment1';
+import Fragment2 from './Fragment2';
+import Fragment1 from './Fragment1';
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Bootstrap from './Bootstrap';
+import DemoTest from './DemoTest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    
     <Demo />
     <User />  
      <ClickEvent />
@@ -53,8 +67,20 @@ root.render(
     <ShouldCompUpdate />
     <ComponentDidUpdat />
     <ComponentWillUnmount1 />
+    <UseEffectHook1 />
+    <UseEffectHook2 />
+    <Demo2 />
+    <UseStateObjects /> 
+    <StateFunctionalComp1 />
+    <Fragment1 />
+    <Fragment2 />
+    <Bootstrap />
+    <DemoTest />
+   
 
-  </React.StrictMode>
+   </React.StrictMode>
+
+
 );
 
 // If you want to start measuring performance in your app, pass a function
