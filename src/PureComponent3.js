@@ -12,3 +12,5 @@ export class PureComponent3 extends PureComponent {
 }
 
 export default PureComponent3
+
+

@@ -43,12 +43,19 @@ import DemoTest from './DemoTest';
 import ContextAPI1 from './ContextAPI1';
 import PureComponent1 from './PureComponent1';
 import PureComponent2 from './PureComponent2';
+import ControlledComp from './ControlledComp';
+import UncontrolledCompJs from './UncontrolledCompJs';
+import UnControlledCompRef from './UnControlledCompRef';
+import UseMemo from './UseMemo';
+import Ref from './Ref';
+import UseRef from './UseRef';
+import ForwardRef1 from './ForwardRef1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+    <React.StrictMode>
     <App />
-    <Demo />
+    {/* <Demo />
     <User />  
      <ClickEvent />
     <ClickEventArrow />
@@ -82,8 +89,16 @@ root.render(
     <ContextAPI1 />
     <PureComponent1 />
     <PureComponent2 />
-
+    <ControlledComp />
+    <UncontrolledCompJs />
+    <UnControlledCompRef />
+    <UseMemo />
+    <Ref />
+    <UseRef />
+    <ForwardRef1 /> */}
+    
    </React.StrictMode>
+    
 
 
 );
