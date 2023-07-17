@@ -11,8 +11,9 @@ import Page404 from './Page404';
 import Course from './Course';
 import SearchParams1 from './SearchParams1';
 import SearchParams2 from './SearchParams2';
-import Development from './development';
-import Training from './training';
+
+import Instrumentation from './Instrumentation';
+import Design from './Design';
 
 function App() {
 
@@ -37,8 +38,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact/" element={<Contact />} />
-            <Route path="development" element={<Development />} />
-            <Route path="training" element={<Training />} />
+            <Route path="instrumentation" element={<Instrumentation />} />
+            <Route path="design" element={<Design />} />
           {/* <Route path="/*" element={<Page404 />} /> */}
           <Route path="/*" element={<Navigate to="/" />} />
           <Route path="/course/:name" element={<Course />} />
