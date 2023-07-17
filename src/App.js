@@ -8,6 +8,9 @@ import PropsClass from './PropsClass';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Page404 from './Page404';
+import Course from './Course';
+import SearchParams1 from './SearchParams1';
+import SearchParams2 from './SearchParams2';
 
 function App() {
 
@@ -34,7 +37,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           {/* <Route path="/*" element={<Page404 />} /> */}
           <Route path="/*" element={<Navigate to="/" />} />
-          <Route path='/user' element={} />
+          <Route path="/course/:name" element={<Course />} />
+          <Route path="/searchparams1" element={<SearchParams1 />} />
+          <Route path="/searchparams2" element={<SearchParams2 />} />
         </Routes>
       </BrowserRouter>
     </div>
