@@ -50,12 +50,15 @@ import UseMemo from './UseMemo';
 import Ref from './Ref';
 import UseRef from './UseRef';
 import ForwardRef1 from './ForwardRef1';
-import FetchApiGet from './FetchApiGet';
+import FetchApiGetFunctional from './FetchApiGetFunctional';
+import FetchApiGetClass from './FetchApiGetClass';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-    <FetchApiGet />
+    <FetchApiGetFunctional />
+    <br />
+    <FetchApiGetClass />
     {/* 
     <App />
     <Demo />
