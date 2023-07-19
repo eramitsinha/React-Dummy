@@ -52,6 +52,7 @@ import UseRef from './UseRef';
 import ForwardRef1 from './ForwardRef1';
 import FetchApiGetFunctional from './FetchApiGetFunctional';
 import FetchApiGetClass from './FetchApiGetClass';
+import FetchApiPostFunctional from './FetchApiPostFunctional';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -59,6 +60,8 @@ root.render(
     <FetchApiGetFunctional />
     <br />
     <FetchApiGetClass />
+    <br />
+    <FetchApiPostFunctional />
     {/* 
     <App />
     <Demo />
