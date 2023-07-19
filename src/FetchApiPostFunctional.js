@@ -14,10 +14,13 @@ export default function FetchApiPostFunctional() {
             company,
             email
         }
-        fetch('http://localhost:3001/users',{
+        fetch('http://localhost:3000/users',{
             method : 'POST',
             body: JSON.stringify(data),
-            headers:{"content-type":"application/json; charset=UTF-8"}  
+            headers:{
+                "Accept" : "application/json",
+                "Content-Type":"application/json",
+            }  
         }).then((result)=>result.json()).then((response)=>{
             console.log(response)
         })
@@ -25,7 +28,7 @@ export default function FetchApiPostFunctional() {
 
     return (
         <div>
-            <h4>Save Data using Fetch API - Functional Component</h4>
+            <h4>Save Data using Fetch API Local - Functional Component</h4>
            
                 Name :
                 <input type="text" value={name} onChange={(e)=>setName(e.target.value)} name="name"  />
