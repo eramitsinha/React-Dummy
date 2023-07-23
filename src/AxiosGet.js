@@ -10,6 +10,12 @@ export default function AxiosGet() {
         })
     }
 
+    function deleteUser(id)
+    {
+        
+        axios.delete(`http://localhost:3001/users/${id}`).then((r)=>console.log("Deleted"))
+    }
+
     useEffect(()=>{
         getApi()
     },[])
@@ -21,6 +27,10 @@ export default function AxiosGet() {
                         Name : {item.name}
                         <br />
                         Company : {item.company}
+                        <br />
+                        <button onClick={()=>deleteUser(item.id)}>
+                            Delete
+                        </button>
                     </p>
                 )
             }
